@@ -1,11 +1,24 @@
-<div align="center">
+# LifeLine - Frontend
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Medical emergency services platform.
 
-  <h1>Built with AI Studio</h2>
+## Integration with Backend
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+This application is pre-configured to work with a Django/REST API backend.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **Base URL**: Configured in `.env` as `VITE_API_BASE_URL`.
+- **Authentication**: Uses Bearer Token (JWT).
+- **Onboarding**: Multi-step flow for capturing user medical and contact information.
 
-</div>
+### Endpoints
+
+- Auth: `/api/auth/register/`, `/api/auth/login/`, `/api/auth/forgot-password/`, etc.
+- Onboarding: `/api/onboarding/basic-info/`, etc.
+
+### Tech Stack
+
+- React + Vite
+- Tailwind CSS
+- React Hook Form
+- Axios
+- Framer Motion
